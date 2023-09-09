@@ -1,0 +1,10 @@
+{{define "head"}}
+<title>mwyndham.dev Index</title>
+{{end}}
+{{define "body"}}
+<p>This is Index body</p>
+<button hx-get="/content" hx-target="#root-body" hx-push-url="true">
+    Navigate to Content
+</button>
+{{template "paragraph"}}
+{{end}}
